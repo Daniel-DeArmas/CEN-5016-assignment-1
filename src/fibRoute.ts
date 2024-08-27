@@ -3,10 +3,10 @@
 import fibonacci from "./fib";
 
 export default (req, res) => {
-  const num:string = req.params;
+  const num:any = req.params;
 
-  const fibN:number = fibonacci(parseInt(num));
-  let result:string = `fibonacci(${num}) is ${fibN}`;
+  const fibN:any = fibonacci(parseInt(num));
+  let result:any = `fibonacci(${num}) is ${fibN}`;
 
   if (fibN < 0) {
     result = `fibonacci(${num}) is undefined`;
