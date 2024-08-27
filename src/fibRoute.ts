@@ -1,7 +1,7 @@
 // Endpoint for querying the fibonacci numbers
 
 import fibonacci from "./fib";
-import express, { Express, Request, Response } from "express";
+import express, { Request, Response } from "express";
 
 export default (req:Request, res:Response ) => {
   const {num} = req.params;
